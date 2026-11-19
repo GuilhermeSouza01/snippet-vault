@@ -2,7 +2,6 @@
 
 use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\Auth\SessionController;
-use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\SnippetsController;
 use Illuminate\Support\Facades\Route;
 
