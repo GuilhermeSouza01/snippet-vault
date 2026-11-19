@@ -2,17 +2,17 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Project;
+use App\Models\Snippet;
 use Illuminate\Http\Request;
 
-class ProjectController extends Controller
+class SnippetsController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('projects.index');
+        return view('snippets.index');
     }
 
     /**
@@ -34,7 +34,7 @@ class ProjectController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Project $project)
+    public function show(Snippet $snippet)
     {
         //
     }
@@ -42,7 +42,7 @@ class ProjectController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Project $project)
+    public function edit(Snippet $snippet)
     {
         //
     }
@@ -50,7 +50,7 @@ class ProjectController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Project $project)
+    public function update(Request $request, Snippet $snippet)
     {
         //
     }
@@ -58,7 +58,7 @@ class ProjectController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Project $project)
+    public function destroy(Snippet $snippet)
     {
         //
     }

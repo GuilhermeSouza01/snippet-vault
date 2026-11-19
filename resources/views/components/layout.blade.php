@@ -1,5 +1,5 @@
 @props([
-    'title' => 'FreelaDesk'
+    'title' => 'CodeVault'
 ])
 <!DOCTYPE html>
 

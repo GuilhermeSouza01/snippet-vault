@@ -8,15 +8,15 @@
                 tabindex="-1"
                 class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
                 <li><a>Home</a></li>
-                <li><a>New Project</a></li>
+                <li><a>New Snippet</a></li>
             </ul>
         </div>
-        <a class="btn btn-ghost text-xl">FreelaDesk</a>
+        <a class="btn btn-ghost text-xl">CodeVault</a>
     </div>
     <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal px-1">
-            <li><a href="/projects">Home</a></li>
-            <li><a>New Project</a></li>
+            <li><a href="/snippets">Home</a></li>
+            <li><a>New Snippet</a></li>
         </ul>
     </div>
     <div class="navbar-end space-x-2">
