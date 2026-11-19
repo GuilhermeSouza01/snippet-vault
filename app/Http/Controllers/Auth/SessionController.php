@@ -39,7 +39,7 @@ class SessionController extends Controller
         if (Auth::attempt($validated)) {
             $request->session()->regenerate();
 
-            return redirect('/projects');
+            return redirect('/snippets');
         }
 
         return back()->withErrors([
@@ -81,6 +81,6 @@ class SessionController extends Controller
         $request->session()->invalidate();
         $request->session()->regenerateToken();
 
-        return redirect('/projects');
+        return redirect('/snippets');
     }
 }
