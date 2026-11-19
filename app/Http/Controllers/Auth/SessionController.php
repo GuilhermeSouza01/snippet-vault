@@ -32,14 +32,16 @@ class SessionController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'email' => ['required' , 'string' , 'email' , 'max:255'],
-            'password' => ['required', 'string' , Password::default()],
+            'email' => ['required', 'string', 'email', 'max:255'],
+            'password' => ['required', 'string', Password::default()],
         ]);
 
-        if(Auth::attempt($validated)) {
+        if (Auth::attempt($validated)) {
             $request->session()->regenerate();
+
             return redirect('/projects');
-        };
+        }
+
         return back()->withErrors([
             'email' => 'The provided credentials do not match our records.',
         ]);
@@ -78,6 +80,7 @@ class SessionController extends Controller
         Auth::logout();
         $request->session()->invalidate();
         $request->session()->regenerateToken();
+
         return redirect('/projects');
     }
 }
